@@ -7,7 +7,7 @@ from flask import Flask, request, make_response
 # html2text.BODY_WIDTH = 140
 
 app = Flask(__name__)
-app.config['DEBUG'] = True
+#app.config['DEBUG'] = True
 
 def text_response(output):
     response = make_response(output, 200)
