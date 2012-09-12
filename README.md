@@ -1,15 +1,10 @@
-html2text-service
------------------
+This a RESTful web service that converts HTML to [Markdown][1]-like syntax using [Aaron Swartz][2]'s [html2text.py][3].
 
-This a RESTful web service that converts HTML to [Markdown][1]-like syntax using [Aaron Schwartz's][2] [html2text.py][3]. The code is
-available [on GitHub][4].
-
-Try it out and help us make it better!
+It's available online at: <http://html2text.theinfo.org/>
 
 [1]: http://daringfireball.net/projects/markdown/
 [2]: http://www.aaronsw.com
 [3]: https://github.com/aaronsw/html2text
-[4]: http://github.com/cv/html2text-service
 
 Running
 -------
