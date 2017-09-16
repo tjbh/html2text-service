@@ -1,4 +1,5 @@
 import os, urllib
+from feedparser import convert_to_utf8
 import chardet
 import html2text
 from flask import Flask, request, make_response
@@ -45,7 +46,7 @@ def get():
     else:
         req = urllib.urlopen(url)
         text = req.read()
-        encoding = _getCharacterEncoding(req.headers, text)[0]
+        encoding = convert_to_utf8(req.headers, text)[1]
         if encoding == 'us-ascii': encoding = 'utf-8'
         try:
             text = text.decode(encoding)
